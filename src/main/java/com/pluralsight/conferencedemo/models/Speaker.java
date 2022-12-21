@@ -1,8 +1,6 @@
 package com.pluralsight.conferencedemo.models;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.Type;
-
 import java.util.List;
 
 @Entity(name = "speakers")
@@ -22,13 +20,8 @@ public class Speaker {
     private List<Session> sessions;
 
 
-    public List<Session> getSessions() {
-        return sessions;
-    }
 
-    public void setSessions(List<Session> sessions) {
-        this.sessions = sessions;
-    }
+
 
     public byte[] getSpeaker_photo() {
         return speaker_photo;
